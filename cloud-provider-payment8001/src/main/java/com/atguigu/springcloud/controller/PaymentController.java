@@ -77,7 +77,7 @@ public class PaymentController {
         Payment result= paymentService.getPaymentById(id);
         log.info("******查询结果是："+result);
         if (result!=null){
-            return new CommonResult(200,"当前线程："+Thread.currentThread().getName()+" =======查询数据成功-----"+serverport,result);
+            return new CommonResult(200,"当前线程："+Thread.currentThread().getName()+" >>_<<查询数据成功-----"+serverport,result);
         }else {
             return new CommonResult(444,"查询数据失败~~_~~",null);
         }
