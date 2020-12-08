@@ -79,7 +79,7 @@ public class PaymentController {
         if (result!=null){
             return new CommonResult(200,"当前线程："+Thread.currentThread().getName()+" =======查询数据成功-----"+serverport,result);
         }else {
-            return new CommonResult(444,"查询数据失败",null);
+            return new CommonResult(444,"查询数据失败~~_~~",null);
         }
     }
 }
